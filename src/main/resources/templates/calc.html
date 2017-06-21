@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <title>Калькулятор!</title>
+</head>
+<body>
+    <h1>Сложение двух чисел</h1>
+    <form action="#" th:action="@{/plus}" th:object="${calc}" method="post">
+        <p>Первое число: <input type="text" th:field="*{firstValue}" /></p>
+        <p>Второе число: <input type="text" th:field="*{secondValue}" /></p>
+        <p>
+            <input type="submit" value="Сложить" />
+        </p>
+    </form>
+    <h1>Вычетание двух чисел</h1>
+    <script type="text/javascript"
+            src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
